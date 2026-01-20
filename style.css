@@ -1,0 +1,75 @@
+:root {
+    --bg: #0f172a;
+    --card-bg: #1e293b;
+    --primary: #38bdf8;
+    --safe: #4ade80;
+    --warning: #fbbf24;
+    --danger: #f87171;
+}
+
+body {
+    background-color: var(--bg);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header { text-align: center; margin-bottom: 30px; }
+h1 { color: var(--primary); margin: 0; }
+
+.main-display {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    margin-bottom: 20px;
+}
+
+#decibel-meter { font-size: 4rem; font-weight: 900; color: var(--primary); }
+#decibel-meter small { font-size: 1.5rem; margin-left: 5px; }
+
+#status-badge {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+.badge-safe { background: var(--safe); color: #064e3b; }
+.badge-warning { background: var(--warning); color: #78350f; }
+.badge-danger { background: var(--danger); color: #7f1d1d; }
+
+button {
+    width: 100%;
+    padding: 15px;
+    background: var(--primary);
+    border: none;
+    border-radius: 15px;
+    color: var(--bg);
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.chart-box { height: 150px; width: 100%; }
+#map { height: 200px; border-radius: 15px; }
